@@ -1,7 +1,15 @@
 <?php
-/*
+
 require_once "data/person.php";
 
-$person1 = new Person();
-$person1->name1= "Rouf"; // this keyword  (error)
-*/
+
+$rouf = new Person("Rouf", "Blitar");
+$rouf->name = "Rouf";
+$rouf->sayHello("Abdul");
+
+$abdul = new Person("Abdul", "Blitar");
+$abdul->name = "Abdul";
+$abdul->sayHello(null);
+
+$rouf->info();
+$abdul->info();

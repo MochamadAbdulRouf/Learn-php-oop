@@ -1,7 +1,7 @@
 <?php
 
-// Object -Oriented Programming (OOP) in PHP
-// manipulasi properties
+// Object-Oriented Programming (OOP) in PHP
+// Manipulasi properties
 
 require_once "data/person.php";
 
@@ -28,10 +28,9 @@ var_dump($person2);
 $person->sayHello("Rouf");
 
 $person3 = new Person();
-$person3->name = "Rouf";
+$person3->name = "Rouf";    
 $person3->address = "Blitar";
 $person3->truck = null;
 $person3->mobil = "avansa";
 
 var_dump($person3);
-r_dump($person3);
