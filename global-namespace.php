@@ -1,5 +1,5 @@
 <?php
-
+// global namespace
 namespace {
     require_once "data/conflict.php";
     require_once "data/helper.php";
