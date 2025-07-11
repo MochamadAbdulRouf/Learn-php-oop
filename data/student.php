@@ -17,5 +17,18 @@ class Student
     {
         unset($this->sample);
     }
+
+// contoh magic function toString
+    public function __toString(): string 
+    {
+        return "Student id ::$this->id, name:$this->value";
+    }
+
+// magic function invoke
+    public function __invoke(...$arguments): void 
+    {
+        $join = join(",", $arguments);
+        echo "invoke student with arguments $join" . PHP_EOL;
+    }
 }
 
