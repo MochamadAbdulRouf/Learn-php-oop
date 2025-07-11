@@ -30,5 +30,17 @@ class Student
         $join = join(",", $arguments);
         echo "invoke student with arguments $join" . PHP_EOL;
     }
+
+    public function __debuginfo()
+    {
+        return [
+            "id" =>  $this->id,
+            "name" => $this->name,
+            "value" => $this->value,
+            "sample" => $this->sample,
+            "author" => "Rouf",
+            "version" => "1.0.0"
+        ];
+    }
 }
 
